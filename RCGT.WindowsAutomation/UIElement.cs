@@ -214,12 +214,7 @@ namespace RCGT.WindowsAutomation
         /// </remarks>
         private void WalkEnabledElements(UIElement nodeElement)
         {
-            Condition condition1 = new PropertyCondition(AutomationElement.IsEnabledProperty, true);
-            Condition condition2 = new PropertyCondition(AutomationElement.IsEnabledProperty, false);
-            Condition OrCondition = new OrCondition(condition1, condition2);
-            TreeWalker walker = new TreeWalker(OrCondition);
-
-            AutomationElement childNode = walker.GetFirstChild(nodeElement.automationElement);
+            AutomationElement childNode = TreeWalker.RawViewWalker.GetFirstChild(nodeElement.automationElement);
 
             while (childNode != null)
             {
