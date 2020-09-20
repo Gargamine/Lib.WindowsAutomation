@@ -1,4 +1,4 @@
-﻿namespace RCGT.WindowsAutomation.Win32Inputs
+﻿namespace Lib.WindowsAutomation.Win32Inputs
 {
     public enum VirtualKeyShort : short
     {

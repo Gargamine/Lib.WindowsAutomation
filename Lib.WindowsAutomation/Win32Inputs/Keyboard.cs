@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace RCGT.WindowsAutomation.Win32Inputs
+namespace Lib.WindowsAutomation.Win32Inputs
 {
 
 #pragma warning disable 649
@@ -314,7 +314,7 @@ namespace RCGT.WindowsAutomation.Win32Inputs
                             break;
                         #endregion Numbers
                         default:
-                            throw new NotSupportedException($"Key '{character}' not supported by 'RCGT.WindowsAutomation.Win32Inputs.Keyboard' class.");
+                            throw new NotSupportedException($"Key '{character}' not supported by 'Lib.WindowsAutomation.Win32Inputs.Keyboard' class.");
                     }
 
                     Thread.Sleep(100);

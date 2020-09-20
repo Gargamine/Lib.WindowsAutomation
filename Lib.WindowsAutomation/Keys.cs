@@ -1,4 +1,4 @@
-﻿namespace RCGT.WindowsAutomation
+﻿namespace Lib.WindowsAutomation
 {
     public enum Keys
     {

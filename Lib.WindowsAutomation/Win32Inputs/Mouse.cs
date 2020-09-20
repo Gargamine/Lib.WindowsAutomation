@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace RCGT.WindowsAutomation.Win32Inputs
+namespace Lib.WindowsAutomation.Win32Inputs
 {
     public static class Mouse
     {
